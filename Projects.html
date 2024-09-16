@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="projectStyle.css">
+        <script src="https://kit.fontawesome.com/c3ad55626e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="icon.ankyr.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Ankyr Application</h1>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Description')"> Description </p>
+                            <p class="tab-links"  onclick="opentab('Tools')">Tools</p>
+                            <p class="tab-links"  onclick="opentab('Objective')">Objective</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Description">
+                            <ul>
+                                <p>
+                                    Ankyr is an Ongoing Personal Project 
+                                    I have been building. It is an interactive Fitness App
+                                    That will encurage users to set their own personal Goal. The 
+                                    Ankyr app will be their "Coach Assistant" in helping users reach their goals 
+                                    by giving them Daily Challanges. These challanges give users a point system 
+                                    and will be rewarded depending on their level of accomplisments. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Tools">
+                            <ul>
+                                <p>
+                                    The tools I used to create this app include, VS code, 
+                                    HTML, TypeScipt, CSS, Java-script, Appwrite Database. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Objective">
+                            <ul>
+                                <p>
+                                    The main objective of this project was getting hands on building my own
+                                    application. In the process I wanted to create something I am passioinate about, 
+                                    the fitness lifestyle is something I am very passionate about. 
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="personal-website">
+            <div class="container">
+                <div class="row">
+                    <div class="about-personal">
+                        <h1 class="sub-title">Personal Website</h1>
+                        <div class="tab-titles">
+                            <p class="personal-link active-link3" onclick="opentab3('Description3')">Description</p>
+                            <p class="personal-link" onclick="opentab3('Tools3')">Tools</p>
+                            <p class="personal-link" onclick="opentab3('Objective3')">Objective</p>
+                        </div>
+                        <div class="personal-content active-tab3" id="Description3">
+                            <ul>
+                                <p>
+                                    I built a personal website in order to get my personal information, along with projects out in the real world. 
+                                    this website has my skills, education, projects
+                                     and contact information. 
+                                    basically a resume in website form. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="personal-content" id="Tools3">
+                            <ul>
+                                <p>
+                                    I used VS code, HTML and CSS to build this website. Website hosting on Github. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="personal-content" id="Objective3">
+                            <ul>
+                                <p>
+                                    Main objective was to get hands on experience in web-designing using
+                                    code like HTML and CSS
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-col-1">
+                        <img src="codingImage.HEIC">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="coffee-kiosk">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Coffee picture.jpeg">
+                    </div>
+                    <div class="about-coffee">
+                        <h1 class="sub-title">Coffee Kiosk</h1>
+                        <div class="tab-titles">
+                            <p class="coffee-links active-link2" onclick="opentab2('Description2')">Description</p>
+                            <p class="coffee-links" onclick="opentab2('Tools2')">Tools</p>
+                            <p class="coffee-links" onclick="opentab2('Objective2')">Objective</p>
+                        </div>
+                        <div class="coffee-content active-tab2" id="Description2">
+                            <ul>
+                                <p>
+                                    Coffee Kiosk is an Object Oriented project that uses 
+                                    concepts such as Polymosphism, Abstract Interfaces and 
+                                    Static Method. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="coffee-content" id="Tools2">
+                            <ul>
+                                <p>
+                                    Tools I used to build this interface include, java-script, Eclipse. 
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="coffee-content" id="Objective2">
+                            <ul>
+                                <p>
+                                    This was a school project I had worked on for a couple of weeks 
+                                    very beggineer level skills, but opened my eyes to the world of coding. 
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var coffeeLinks = document.getElementsByClassName("coffee-links")
+            var coffeeContents = document.getElementsByClassName("coffee-content")
+            function opentab2(tabname){
+                for(coffeeLink of coffeeLinks){
+                    coffeeLink.classList.remove("active-link2")
+                }
+                for(coffeeContent of coffeeContents){
+                    coffeeContent.classList.remove("active-tab2")
+                }
+                event.currentTarget.classList.add("active-link2")
+                document.getElementById(tabname).classList.add("active-tab2")
+            }
+        </script>
+        <script>
+            var personalLinks = document.getElementsByClassName("personal-link")
+            var personalContents = document.getElementsByClassName("personal-content")
+            function opentab3(tabname){
+                for(personalLink of personalLinks){
+                    personalLink.classList.remove("active-link3")
+                }
+                for(personalContent of personalContents){
+                    personalContent.classList.remove("active-tab3")
+                }
+                event.currentTarget.classList.add("active-link3")
+                document.getElementById(tabname).classList.add("active-tab3")
+            }
+        </script>
+    </body>
+</html>
